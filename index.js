@@ -88,4 +88,4 @@ function notify(){
     io.sockets.emit(INVALIDATE, 1);
 }
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
